@@ -1,0 +1,140 @@
+/* Set font family and size */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+fieldset + fieldset {
+  margin-top: 40px;
+}
+
+/* Set margin and padding for table */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style table headers */
+thead tr {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+/* Style table cells */
+td,
+th {
+  padding: 10px;
+}
+
+/* Add border to table */
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+/* Set margin and padding for form elements */
+form div {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Set width for textareas */
+textarea {
+  width: 50%;
+  height: 3rem;
+}
+
+/* Set style for submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.top {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+#rent,
+#type {
+  position: relative;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  fieldset {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.page {
+  position: relative;
+}
+#form {
+  flex: 1;
+  top: 10rem;
+}
