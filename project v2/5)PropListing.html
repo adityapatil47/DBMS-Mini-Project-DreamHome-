@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamHome Property Listing for Week</title>
+    <link rel="stylesheet" href="styles\PropListing\style.css">
+    <script src="components\header.js" type="text/javascript" defer></script>
+
+
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <div id="form" class="page">
+        <fieldset>
+
+            <legend>
+                <h2>DreamHome Property Listing</h2>
+            </legend>
+            <fieldset>
+                <p>
+                    If you are interested in viewing or renting any of the properties in this list, please contact our
+                    branch
+                    office
+                    as soon as possible.
+                </p>
+                <hr>
+                <div>
+                    <div id="branch-address" class="top">
+                        <label for="branch-address">Branch Address:</label>
+                        <textarea name="branch-address" id="address"></textarea>
+                    </div>
+                    <div id="telephone" class="top">
+                        <label for="telephone">Telephone Number:</label>
+                        <input type="tel" id="telph" name="telephone" required><br><br>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <h3>Sample Output</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Property No</th>
+                            <th>Address</th>
+                            <th>Type</th>
+                            <th>Rooms</th>
+                            <th>Rent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PG4</td>
+                            <td>6 Lawrence St, Glasgow</td>
+                            <td>Flat</td>
+                            <td>3</td>
+                            <td>35540+</td>
+                        </tr>
+                        <tr>
+                            <td>PG36</td>
+                            <td>2 Manor Rd, Glasgow</td>
+                            <td>Flat</td>
+                            <td>2</td>
+                            <td>350</td>
+                        </tr>
+                        <tr>
+                            <td>PG21</td>
+                            <td>18 Dale Road, Glasgow</td>
+                            <td>Flat</td>
+                            <td>3</td>
+                            <td>375</td>
+                        </tr>
+                        <tr>
+                            <td>PG16</td>
+                            <td>5 Novar Drive, Glasgow</td>
+                            <td>Flat</td>
+                            <td>4</td>
+                            <td>440</td>
+                        </tr>
+                        <tr>
+                            <td>PG47</td>
+                            <td>100A Apple Lane, Glasgow</td>
+                            <td>House</td>
+                            <td>7</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>PG77</td>
+                            <td>781 Greentree Dr, Glasgow</td>
+                            <td>House</td>
+                            <td>6</td>
+                            <td>560</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset><br>
+        </fieldset><br>
+    </div>
+</body>
+
+</html>

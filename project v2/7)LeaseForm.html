@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamHome Lease Number</title>
+    <link rel="stylesheet" href="styles\LeaseForm\style.css">
+    <script src="components\header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <div id="form" class="page">
+        <fieldset>
+            <legend>
+                <h2>DreamHome Lease</h2>
+            </legend>
+            <h3>Form Number: <em>00345810</em>
+            </h3>
+            <form>
+                <fieldset>
+                    <div>
+                        <div class="top">
+                            <label for="client-number">Client Number:</label>
+                            <input type="text" id="client-number" name="client-number"><br><br>
+                        </div>
+                        <div class="top">
+                            <label for="client-name">client Name:</label>
+                            <input type="text" id="client-name" name="client-name"><br><br>
+                        </div>
+                    </div>
+                </fieldset><br>
+                <fieldset>
+                    <label for="property-number">Property Number:</label>
+                    <input type="text" id="property-number" name="property-number"><br><br>
+                    <label for="property-address">Property Address:</label>
+                    <textarea id="property-address" name="property-address" required></textarea><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <div>
+                        <div class="rent">
+                            <label for="rent-start">Rent Start:</label>
+                            <input type="text" id="rent-start" name="rent-start"><br><br>
+                        </div>
+                        <div class="rent">
+                            <label for="rent-finish">Rent Finish:</label>
+                            <input type="text" id="rent-finish" name="rent-finish"><br><br>
+                        </div>
+                    </div>
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" name="duration"><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Enter payment details</legend>
+                    <div>
+                        <div class="details">
+                            <label for="monthly-rent">Monthly Rent:</label>
+                            <input type="text" id="monthly-rent" name="monthly-rent"><br><br>
+                        </div>
+                        <div class="details">
+                            <label for="payment-method">Payment Method:</label>
+                            <input type="text" id="payment-method" name="payment-method"><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="details">
+                            <label for="deposit-paid">Deposit Paid (Y or N):</label>
+                            <input type="text" id="deposit-paid" name="deposit-paid"><br><br>
+                        </div>
+                        <div class="details">
+                            <label for="deposit-amount">Deposit Amount:</label>
+                            <input type="text" id="deposit-amount" name="deposit-amount"><br><br>
+                        </div>
+                    </div>
+                    <div class="submit-container">
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset><br>
+
+            </form>
+        </fieldset><br>
+    </div>
+</body>
+
+</html>

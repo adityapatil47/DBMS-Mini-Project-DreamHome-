@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+em {
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive design */
+@media screen and (min-width: 768px) {
+  fieldset {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+#property-number,
+#duration {
+  width: 40%;
+}
+
+#property-address {
+  width: 70%;
+}
+.top,
+.rent,
+.details {
+  display: inline-block;
+  margin-right: 4rem;
+}
+.page {
+  position: relative;
+}
+#form {
+  flex: 1;
+  top: 10rem;
+}
+
+#client-number {
+  width: 7rem;
+}
+#client-name {
+  width: 16rem;
+}
