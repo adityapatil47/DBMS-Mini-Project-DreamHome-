@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staff Registration Form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h2>Staff Registration Form</h2>
+        </legend>
+        <form action="#" method="POST">
+            <fieldset>
+                <label for="staff-number">Staff Number:</label>
+                <input type="text" id="staff-number" name="staff-number" required><br><br>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required><br><br>
+
+                <label for="sex">Sex:</label>
+                <input type="radio" id="male" name="sex" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Female</label><br><br>
+            </fieldset><br>
+            <fieldset>
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required><br><br>
+
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" required><br><br>
+            </fieldset><br>
+            <fieldset>
+                <label for="branch-number">Branch Number:</label>
+                <input type="text" id="branch-number" name="branch-number" required><br><br>
+
+                <label for="branch-address">Branch Address:</label>
+                <textarea id="branch-address" name="branch-address" required></textarea><br><br>
+
+                <label for="telephone">Telephone Number(s):</label>
+                <input type="tel" id="telephone" name="telephone" required><br><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Enter Details (wherever Applicable)</legend>
+                <label for="supervisor-name">Supervisor Name:</label>
+                <input type="text" id="supervisor-name" name="supervisor-name"><br><br>
+
+                <label for="manager-start-date">Manager Start Date:</label>
+                <input type="date" id="manager-start-date" name="manager-start-date"><br><br>
+
+                <label for="manager-bonus">Manager Bonus:</label>
+                <input type="number" id="manager-bonus" name="manager-bonus"><br><br>
+            </fieldset><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>
