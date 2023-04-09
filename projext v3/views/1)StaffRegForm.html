@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staff Registration Form</title>
+    <link rel="stylesheet" href="/static/StaffRegForm/style.css">
+    <script src="/static/components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <div id="form" class="page">
+        <fieldset>
+            <legend>
+                <h2>Staff Registration Form</h2>
+            </legend>
+            <form action="/StaffRegForm" method="POST">
+                <fieldset>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="staff_number">Staff Number:</label>
+                    <input type="text" id="staff_number" name="staff_number" required><br><br>
+
+                    <label for="sex">Sex:</label>&nbsp&nbsp
+                    <input type="radio" id="male" name="sex" value="male" required>
+                    <label for="male">Male</label>&nbsp&nbsp
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Female</label><br><br>
+
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" required><br><br>
+
+                    <label for="salary">Salary:</label>
+                    <input type="number" id="salary" name="salary" required><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <label for="branch_number">Branch Number:</label>
+                    <input type="text" id="branch_number" name="branch_number" required><br><br>
+
+                    <label for="branch_address">Branch Address:</label>
+                    <textarea id="branch_address" name="branch_address" required></textarea><br><br>
+
+                    <label for="telephone">Telephone Number(s):</label>
+                    <input type="tel" id="telephone" name="telephone" required><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Enter Details (wherever Applicable)</legend>
+                    <label for="supervisor_name">Supervisor Name:</label>
+                    <input type="text" id="supervisor_name" name="supervisor_name"><br><br>
+
+                    <label for="manager_start_date">Manager Start Date:</label>&nbsp&nbsp
+                    <input type="date" id="manager_start_date" name="manager_start_date"><br><br>
+
+                    <label for="manager_bonus">Manager Bonus:</label>
+                    <input type="number" id="manager_bonus" name="manager_bonus"><br><br>
+                </fieldset><br>
+
+                <div class="submit_container">
+                    <input type="submit" value="Submit">
+                </div>
+
+        </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

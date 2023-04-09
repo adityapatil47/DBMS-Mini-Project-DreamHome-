@@ -1,0 +1,10 @@
+for staffListing
+given branch_number then find * or (staff_number,name,position)
+
+for PropListing
+given branch address / telephone / both from this we can check inside staff table and collect branch number and 
+then cheack inside propery branch_registered = branch number to give * or (property_number,address,type,room,rent)
+
+for PropViewReport
+given property_number we can find contact_name as client_name in property table we can use this to get 
+client_number.Name,Date_reditered and comment

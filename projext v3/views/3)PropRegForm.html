@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamHome Property Registration Form</title>
+    <link rel="stylesheet" href="/static/PropRegForm/style.css">
+    <script src="/static/components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <div id="form" class="page">
+        <fieldset>
+            <legend>
+                <h2>DreamHome Property Registration Form</h2>
+            </legend>
+            <form action="/PropRegForm" method="POST">
+                <fieldset>
+                    <div>
+                        <div id="prop_num" class="top1">
+                            <label for="property_number">Property Number:</label>
+                            <input type="text" id="property_number" name="property_number" required><br><br>
+                        </div>
+                        <div id="type" class="top1">
+                            <label for="type">Type:</label>
+                            <input type="text" id="type" name="type" required><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="room" class="top2">
+                            <label for="rooms">Rooms:</label>
+                            <input type="number" id="rooms" name="rooms" min="1" required><br><br>
+                        </div>
+                        <div id="rent" class="top2">
+                            <label for="rent">Rent:</label>
+                            <input type="number" id="rent" name="rent" min="1000" required><br><br>
+                        </div>
+                    </div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea><br><br>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required> No Comment </textarea><br><br>
+                </fieldset><br>
+                <fieldset>
+                    <diV>
+                        <diV id="owner_name" class="top3">
+                            <label for="owner_name">owner Name:</label>
+                            <input type="text" name="owner_name" required><br><br>
+                        </diV>
+                        <diV id="owner_number" class="top3">
+                            <label for="owner_number">Owner Number (if known):</label>
+                            <input type="text" name="owner_number"><br><br>
+                        </diV>
+                    </diV>
+                    <label for="owner_address">Address:</label>
+                    <textarea id="owner_address" name="owner_address" required></textarea><br><br>
+
+                    <label for="owner_tel">Tel. No.:</label>
+                    <input type="tel" id="owner_tel" name="owner_tel" required><br><br>
+
+
+                </fieldset><br>
+                <fieldset>
+                    <legend>Enter details where applicable:</legend>
+                    <div>
+                        <div class="mid_info">
+                            <label for="business_type">Type of business:</label>
+                            <input type="text" id="business_type" name="business_type" required><br><br>
+                        </div>
+                        <div class="mid_info">
+                            <label for="contact_name" id="cname">Contact Name:</label>
+                            <input type="text" id="contact_name" name="contact_name" required><br><br>
+                        </div>
+                    </div>
+                </fieldset><br>
+                <div>
+                    <div id="manage" class="btm_info">
+                        <fieldset>
+                            <label for="staff_managed">Managed by staff:</label>
+                            <input type="text" id="staff_managed" name="staff_managed" required><br><br>
+                        </fieldset><br>
+                    </div>
+                    <div id="branch" class="btm_info">
+                        <fieldset>
+                            <label for="branch_registered">Registered at branch:</label>
+                            <select id="branch_registered" name="branch_registered" required>
+                                <option value="">Select Branch</option>
+                                <option value="branch1">Branch 1</option>
+                                <option value="branch2">Branch 2</option>
+                                <option value="branch3">Branch 3</option>
+                            </select><br><br>
+                        </fieldset><br>
+                    </div>
+                </div>
+                <div class="submit_container">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

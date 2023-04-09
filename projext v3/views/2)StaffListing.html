@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamHome Staff Listing</title>
+    <link rel="stylesheet" href="/static/StaffListing/style.css">
+    <script src="/static/components/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <form action="/staff_listing" method="none">
+        <div id="form" class="page">
+            <fieldset>
+                <legend>
+                    <h2>DreamHome Staff Listing</h2>
+                </legend><br>
+                <fieldset>
+                    <div>
+                        <div id="branch_number" class="top">
+                            <label for="branch_number">Branch Number:</label>
+                            <input type="text" id="br_num" name="branch_number" required><br><br>
+                        </div>
+                        <div id="telephone" class="top">
+                            <label for="telephone">Telephone Number:</label>
+                            <input type="tel" name="telephone" required><br><br>
+                        </div>
+                    </div>
+
+
+
+                    <label for="branch_address">Branch Address:</label>
+                    <textarea id="branch_address" name="branch_address" required></textarea><br>
+                    <div class="submit_container">
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset><br>
+    </form>
+    <fieldset>
+        <h3>Sample output</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Staff Number</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Smith</td>
+                    <td>Sales Representative</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Doe</td>
+                    <td>Marketing Coordinator</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Bob Johnson</td>
+                    <td>IT Manager</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset><br>
+    </fieldset>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+fieldset {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  max-width: 600px;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+  display: inline;
+  width: 150px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  /* width: 300px; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Apply styles to the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Apply styles to the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Apply styles to the placeholder text */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/* Apply styles to the error messages */
+.error_message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#cnum {
+  width: auto;
+}
+
+.top1,
+.top2 {
+  display: inline-block;
+}
+#client_name,
+#client_number,
+#property_type,
+#max-rent {
+  position: relative;
+  width: 15rem;
+}
+.submit_container {
+  display: flex;
+  justify-content: center;
+}
+
+.btm {
+  display: inline-block;
+}
+
+#registration_date {
+  position: relative;
+  width: 17rem;
+  bottom: 1rem;
+  left: 4rem;
+}
+
+#branch_address {
+  width: 70%;
+  height: 3rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.page {
+  position: relative;
+}
+#form {
+  flex: 1;
+  top: 10rem;
+}

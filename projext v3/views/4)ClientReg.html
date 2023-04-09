@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamHome Client Registration Form</title>
+    <link rel="stylesheet" href="/static/ClientReg/style.css">
+    <script src="/static/components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar" class="page">
+        <header-component></header-component>
+    </div>
+    <div id="form" class="page">
+        <fieldset>
+            <legend>
+                <h2>DreamHome Client Registration Form</h2>
+            </legend>
+
+            <form action="/ClientReg" method="POST">
+                <fieldset>
+                    <div>
+                        <div id="client_name" class="top1">
+                            <label for="client_name">Client Name:</label><br>
+                            <input type="text" name="client_name"><br><br>
+                        </div>
+                        <div id="client_number" class="top1">
+                            <label for="client_number" id="cnum">Client Number (if known):</label><br>
+                            <input type="text" name="client_number"><br><br>
+                        </div>
+                    </div>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Property requirements</legend>
+                    <div>
+                        <div id="property_type" class="top2">
+
+                            <label for="property_type">Type:</label><br>
+                            <input type="text" name="property_type"><br><br>
+                        </div>
+                        <div id="max_rent" class="top2">
+                            <label for="max_rent">Max Rent:</label><br>
+                            <input type="number" name="max_rent"><br><br>
+                        </div>
+                    </div>
+                </fieldset><br>
+                <fieldset>
+                    <label for="branch_number">Branch Number:</label><br>
+                    <input type="text" id="branch_number" name="branch_number"><br><br>
+
+                    <label for="branch_address">Branch Address:</label><br><br>
+                    <textarea id="branch_address" name="branch_address" required></textarea><br><br>
+                    <div>
+                        <div id="registered_by" class="btm">
+                            <label for="registered_by">Registered By:</label><br>
+                            <input type="text" name="registered_by"><br><br>
+                        </div>
+                        <div id="registration_date" class="btm">
+                            <label for="registration_date">Date Registered:</label><br><br>
+                            <input type="date" name="registration_date"><br><br>
+                        </div>
+                    </div>
+                </fieldset><br>
+
+                <div class="submit_container">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </fieldset><br>
+    </div>
+</body>
+
+</html>
